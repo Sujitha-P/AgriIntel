@@ -1,0 +1,101 @@
+.home {
+    padding: 30px 30px 30px 30px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    border-radius: 20px;
+    width: 1000px; /* Increased width */
+    margin: 100px auto; /* Center the container horizontally and add top margin */
+    position: relative; /* Ensure child elements are positioned relative to this container */
+}
+
+.weather-section,
+.crop-yield-section {
+    margin-bottom: 40px;
+}
+
+.weather-form,
+form {
+    margin-bottom: 20px;
+}
+
+.weather-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scroll */
+    padding: 10px;
+    gap: 15px; /* Space between weather items */
+    white-space: nowrap; /* Prevent wrapping */
+    max-width: 100%; /* Ensure it doesn't overflow the parent container */
+    height: 120px; /* Adjust the height of the scrollable area */
+}
+
+.weather-day {
+    flex: 0 0 auto; /* Prevent shrinking and allow horizontal scrolling */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+    margin-right: 15px; /* Space between items */
+}
+
+.weather-day h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.weather-day p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.scroll-more {
+    flex: 0 0 auto; /* Allow this section to stay within scroll area */
+    width: 150px; /* Adjust width as needed */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+    display: none; /* Hide the scroll-more section */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: rgba(12, 12, 12, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+button:hover {
+    background-color: #929eaab5;
+}
+
+.error {
+    color: red;
+}
